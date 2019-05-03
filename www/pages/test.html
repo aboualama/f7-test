@@ -1,9 +1,206 @@
-<div class="page" data-name="test">
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>My App</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.bundle.rtl.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
   <div id="app"> 
+    <!-- Views/Tabs container -->
+    <div class="views tabs safe-areas">
+
+
+      <!-- Tabbar for switching views-tabs -->
+      <div class="toolbar tabbar-labels toolbar-bottom">
+        <div class="toolbar-inner">
+          <a href="#view-home" class="tab-link"> 
+            <i class="icon f7-icons">home_fill</i> 
+            <span class="tabbar-label">الرئيسية</span>
+          </a>
+          <a href="#view-catalog" class="tab-link">
+            <i class="icon f7-icons">bulb</i> 
+            <span class="tabbar-label">الخدمات</span>
+          </a>
+          <a href="#view-set" class="tab-link">
+            <i class="icon f7-icons">bulb</i> 
+            <span class="tabbar-label">أضافة</span>
+          </a>
+          <a href="#view-setting" class="tab-link">
+            <i class="icon f7-icons">placemark</i> 
+            <span class="tabbar-label">دليلك</span>
+          </a>
+          <a href="#view-settigs" class="tab-link">
+            <i class="icon f7-icons">volume</i> 
+            <span class="tabbar-label">الاخبار</span>
+          </a>
+        </div>
+      </div>
+
+ 
+
+
+    <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+    <div id="view-home" class="view view-main tab tab-active"> 
+
+      
+      <!-- Page, data-name contains page name which can be used in page callbacks -->
+      <div class="page" data-name="home">
+        <!-- Top Navbar -->
+        <div class="navbar rtl">
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                  <i class="icon f7-icons">sort</i> 
+                </a>
+                <div class="title sliding">أواني فخارية</div>
+              </div>
+              <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="right">
+                  <i class="icon f7-icons">forward_fill</i> 
+                </a>
+                <a href="#" class="link icon-only panel-open" data-panel="right">
+                  <i class="icon f7-icons">arrow_left</i> 
+                </a>
+              </div>
+            </div>
+        </div>
+ 
+
+
+        <!-- header-swiper -->
+        <div class="swiper-container swiper-init header-swiper" data-speed="400" data-space-between="40">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img  width="100%" alt="picture" src="./img/slide-1.jpg"  /></div>
+            <div class="swiper-slide"><img  width="100%" alt="picture" src="./img/slide-2.jpg"  /></div>
+            <div class="swiper-slide"><img  width="100%" alt="picture" src="./img/slide-3.jpg"  /></div> 
+          </div>
+        </div>
+
+        <div class="card-header details" >التفاصيل</div>
+
+        <div class="block"> 
+          <div class="row">
+              <div class="col-50">
+                <i class="icon f7-icons float-right  margin-left">volume</i>
+                <div class="title sliding">اسرة المغازي</div>
+              </div>
+              <div class="col-50">
+                <i class="icon f7-icons float-right  margin-left">volume</i>
+                <div class="title sliding">اسرة المغازي</div>
+              </div>
+              <div class="col-50">
+                <i class="icon f7-icons float-right  margin-left">volume</i>
+                <div class="title sliding">اسرة المغازي</div>
+              </div>
+              <div class="col-50">
+                <i class="icon f7-icons float-right  margin-left">volume</i>
+                <div class="title sliding">اسرة المغازي</div>
+              </div> 
+          </div>
+          </div> 
+        
+          <div class="card-header details" >منتجات ذات صله</div> 
+
+          <!-- header-swiper -->
+          <div data-space-between="10" data-slides-per-view="3" class="swiper-container swiper-init demo-swiper">   
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img  width="100%" height="100px" alt="picture" src="./img/slide-b-1.jpg"  /></div>
+              <div class="swiper-slide"><img  width="100%" height="100px" alt="picture" src="./img/slide-b-2.jpg"  /></div>
+              <div class="swiper-slide"><img  width="100%" height="100px" alt="picture" src="./img/slide-b-3.jpg"  /></div> 
+            </div> 
+          </div> 
+            
+
+
+ 
+
+
+
+          <div class="block"> 
+              <p class="row">
+                  <button class="col button button-large button-fill color-gray">
+                      <span> اتصال </span>
+                      <i class="icon material-icons">call</i> 
+                  </button>
+                  <button class="col button button-large button-fill color-gray">
+                      <span> المنتجات </span>
+                      <i class="icon f7-icons">cloud</i> 
+                  </button>
+              </p>
+            </div>
+
+ 
+              <div class="fab fab-extended fab-center-bottom color-blue cccc">
+                <a href="#">
+                  <i class="icon f7-icons">add</i> 
+                </a>
+              </div>  
+
+      </div> 
+    </div>
 
 
 
 
+
+
+           
+        <!-- Catalog View -->
+        <!-- <div id="view-catalog" class="view tab"> -->
+          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+        <!-- </div>  -->
+        <!-- Settings View -->
+        <!-- <div id="view-settings" class="view tab"> -->
+          <!-- Settings page will be loaded here dynamically from /settings/ route -->
+        <!-- </div>  -->
+ 
+  </div> 
+</div>
+
+  
+          
+
+
+
+
+
+
+  
+  <!-- Cordova -->
+  <!--
+  <script src="cordova.js"></script>
+  -->
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.bundle.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
 
 
           
@@ -24,5 +221,4 @@
       
 
 
-  </div>  
-</div> 
+ 

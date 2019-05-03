@@ -42,3 +42,11 @@ details
 .header-swiper.header-swiper-auto .swiper-slide:nth-child(3n) {
   width: 30%;
 }
+ 
+.size-22 { 
+  font-size: 22px 
+}
+
+.add-button{
+  margin-bottom: 20px;
+}
