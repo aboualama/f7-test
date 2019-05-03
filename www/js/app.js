@@ -56,6 +56,15 @@ var settingsView = app.views.create('#view-settings', {
 });
 
 
+// var swiper = app.swiper.create('.swiper-container', {
+//   speed: 400,
+//   spaceBetween: 100
+// });
+// var swiper = app.swiper.get('.swiper-container');
+// swiper.slideNext();
+
+
+
 // Login Screen Demo
 $$('#my-login-screen .login-button').on('click', function () {
   var username = $$('#my-login-screen [name="username"]').val();

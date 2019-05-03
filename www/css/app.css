@@ -5,3 +5,40 @@
 .ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
   display: none;
 }
+ 
+/* navbar styles */ 
+.navbar , .navbar a{
+background-color: #ea7755;
+color: #fff;
+}
+details
+
+/* A bit of header styles */;
+.header-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+}
+.header-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.header-swiper {
+  margin: 0px 0 25px;
+  font-size: 18px;
+  height: 150px;
+}
+.header-swiper.header-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.header-swiper.header-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.header-swiper.header-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
